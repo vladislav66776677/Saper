@@ -237,7 +237,7 @@ int main()
 
     while (true)
     {
-        cout << "Õî÷åòå íà÷àòü íîâó ãðó?(1 - Òàê, 0 - Í³)" << endl;
+        cout << "Ã•Ã®Ã·Ã¥Ã²Ã¥ Ã­Ã Ã·Ã Ã²Ã¼ Ã­Ã®Ã¢Ã³ Ã£Ã°Ã³?(1 - Ã’Ã Ãª, 0 - ÃÂ³)" << endl;
         cin >> game;
 
         if (!game)
@@ -250,9 +250,9 @@ int main()
         while (true)
         {
             a.print();
-            cout << "Ââåä³òü êîîðäèíàòè X:";
+            cout << "Ã‚Ã¢Ã¥Ã¤Â³Ã²Ã¼ ÃªÃ®Ã®Ã°Ã¤Ã¨Ã­Ã Ã²Ã¨ X:";
             cin >> x;
-            cout << "Ââåä³òü êîîðäèíàòè Y:";
+            cout << "Ã‚Ã¢Ã¥Ã¤Â³Ã²Ã¼ ÃªÃ®Ã®Ã°Ã¤Ã¨Ã­Ã Ã²Ã¨ Y:";
             cin >> y;
             system("cls");
             value = a.input_coor(x, y);
@@ -270,17 +270,18 @@ int main()
                 if (element == 54)
                 {
                     bool win = true;
+                    break;
                 }
             }
         }
 
         if (win)
         {
-            cout << "Âè ïåðåìîãëè!" << endl;
+            cout << "Ã‚Ã¨ Ã¯Ã¥Ã°Ã¥Ã¬Ã®Ã£Ã«Ã¨!" << endl;
             continue;
         }
 
-        cout << "Âè ïðîãðàëè!" << endl;
+        cout << "Ã‚Ã¨ Ã¯Ã°Ã®Ã£Ã°Ã Ã«Ã¨!" << endl;
     }
     return 0;
 }
